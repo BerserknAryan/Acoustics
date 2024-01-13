@@ -1,0 +1,87 @@
+# Example usage
+Fs = 100  # Sample values, you can replace them with actual values
+Qes = 0.5
+Vas = 20
+Qts = 0.6
+Qtc = 0.70
+
+ebp = Enclosure.calculate_ebp(Fs, Qes)
+alpha = Enclosure.calculate_alpha(Qts)
+enclosure_volume = Enclosure.calculate_enclosure_volume(Vas, alpha)
+system_resonant_frequency = Enclosure.calculate_system_resonant_frequency(Qts, Fs)
+theoretical_cut_off_frequency = Enclosure.calculate_theoretical_cut_off_frequency(Qtc, Fs, Qts)
+enclosure_volume_2 = Enclosure.calculate_enclosure_volume_2(Vas, Qts)
+theoretical_cut_off_frequency_2 = Enclosure.calculate_theoretical_cut_off_frequency_2(Fs, Qts)
+tuning_frequency = Enclosure.calculate_tuning_frequency(Fs, Qts, -0.9)
+bandpass_enclosure_volume = Enclosure.calculate_bandpass_enclosure_volume(Vas, Qts)
+bandpass_tuning_frequency = Enclosure.calculate_bandpass_tuning_frequency(Fs, Qts)
+
+horn usage
+# Example usage
+throat_area = 10  # Sample values, you can replace them with actual values
+mouth_area = 50
+length = 2
+
+con_rate_of_flare = horns.calculate_con_rate_of_flare(throat_area, mouth_area, length)
+exp_rate_of_flare_constant = horns.calculate_exp_rate_of_flare_constant(con_rate_of_flare, throat_area, length)
+
+# Create an instance of the <link>Sealed</link> class
+sealed_enclosure = <link>Sealed</link>()
+
+# Calculate the volume of a sealed enclosure
+volume_sealed = sealed_enclosure.calculate_sealed_volume()
+print(volume_sealed)  # Output: Volume of sealed enclosure calculated
+
+# Calculate the volume of a compound sealed enclosure
+volume_compound = sealed_enclosure.calculate_compound_volume()
+print(volume_compound)  # Output: Volume of compound sealed enclosure calculated
+
+# Calculate the volume of a back-to-back sealed enclosure
+volume_backtoback = sealed_enclosure.calculate_backtoback_volume()
+print(volume_backtoback)  # Output: Volume of back-to-back sealed enclosure calculated
+
+# Calculate the volume of a planar sealed enclosure
+volume_planar = sealed_enclosure.calculate_planar_volume()
+print(volume_planar)  # Output: Volume of planar sealed enclosure calculated
+
+# Calculate the volume of a push/pull sealed enclosure
+volume_pushpull = sealed_enclosure.calculate_pushpull_volume()
+print(volume_pushpull)  # Output: Volume of push/pull sealed enclosure calculated
+
+# Calculate the volume of a push/push sealed enclosure
+volume_pushpush = sealed_enclosure.calculate_pushpush_volume()
+print(volume_pushpush)  # Output: Volume of push/push sealed enclosure calculated
+
+
+isobaric usage
+# Usage examples
+# Calculate enclosure volume for vented isobaric conditions
+vas = 0.5  # Example value for Vas
+qts = 0.4  # Example value for Qts
+enclosure_volume = ISOBARIC.isobaric(vas, qts)
+print("Enclosure Volume:", enclosure_volume)
+
+# Calculate tuning frequency for vented enclosure in isobaric conditions
+tuning_frequency = ISOBARIC.VentedIsobaric.calculate_tuning_frequency(vas, qts, enclosure_volume)
+print("Tuning Frequency:", tuning_frequency)
+
+# Calculate cut-off frequency for vented enclosure in isobaric conditions
+fs = 1000  # Example value for fs
+cut_off_frequency = ISOBARIC.VentedIsobaric.calculate_cut_off_frequency(fs, qts)
+print("Cut-off Frequency:", cut_off_frequency)
+
+# Calculate optimal port area for vented enclosure in isobaric conditions
+port_area = ISOBARIC.VentedIsobaric.calculate_port_area(tuning_frequency, enclosure_volume)
+print("Optimal Port Area:", port_area)
+
+# Calculate required port length for vented enclosure in isobaric conditions
+port_length = ISOBARIC.VentedIsobaric.calculate_port_length(port_area, tuning_frequency)
+print("Required Port Length:", port_length)
+
+# Estimate air speed within the port for vented enclosure in isobaric conditions
+air_speed = ISOBARIC.VentedIsobaric.calculate_air_speed(port_area, tuning_frequency, enclosure_volume)
+print("Air Speed within the Port:", air_speed)
+
+# Determine the overall efficiency of vented enclosure in isobaric conditions
+efficiency = ISOBARIC.VentedIsobaric.calculate_efficiency(enclosure_volume, tuning_frequency, qts, fs)
+print("Overall Efficiency:", efficiency)
