@@ -2,12 +2,31 @@ import math
 from formulas import area_formulas, enclosures, conversion
 
 
-def define_shape(shape, dimensions):
-    if shape in area_formulas:
-        dimensions = [float(dim) for dim in dimensions.split(',')]
-        return area_formulas(shape, dimensions)
-    else:
-        return "Invalid shape"
+class Sealed:
+    @staticmethod
+    def optimal_sealed_volume(driver_vas, driver_qts, driver_fs):
+        # Formula to calculate the optimal volume for a sealed enclosure
+        return 0.9 * driver_vas / ((driver_qts ** 3) * (driver_fs ** 2))
+
+    @staticmethod
+    def air_spring_constant(enclosure_volume, driver_qts):
+        # Formula to calculate the air spring constant for a sealed enclosure
+        return (enclosure_volume * (driver_qts ** 2)) / 845
+
+    @staticmethod
+    def cutoff_frequency(enclosure_volume, driver_vas):
+        # Formula to calculate the cutoff frequency for a sealed enclosure
+        return (enclosure_volume / (driver_vas * 1.464)) ** 0.5
+
+    @staticmethod
+    def sealed_qtc(enclosure_volume, driver_vas):
+        # Formula to calculate the enclosure Qtc for a sealed enclosure
+        return (enclosure_volume / (driver_vas * 1.464)) ** 0.5
+
+    @staticmethod
+    def critical_damping_ratio(driver_qts):
+        # Formula to calculate the critical damping ratio for a sealed enclosure
+        return 0.707 / driver_qts
 
 
 def get_system():
@@ -58,65 +77,6 @@ def get_system():
 
     selected_shape = shape_mapping.get(selected_shape_num)
 
-    generate_panel_dimensions(selected_shape)
-
-
-def generate_panel_dimensions(selected_shape):
-    if selected_shape:
-        # Get user input for dimensions
-        dimensions_input = input("Enter the dimensions (comma-separated): ")
-        shape_math = define_shape(selected_shape, dimensions_input)
-
-        # Display the result
-        print(f"The volume of the {selected_shape} is: {shape_math}")
-    else:
-        print("Invalid shape number. Please enter a valid number.")
-
-    # Get user inputs
-    num_drivers = int(input("Enter the number of drivers: "))
-    vas = float(input("Enter the Vas (equivalent air volume) of the driver: "))
-    qts = float(input("Enter the Qts (total Q factor) of the driver: "))
-    max_dimensions = [float(input("Enter the maximum length: ")),
-                      float(input("Enter the maximum width: ")),
-                      float(input("Enter the maximum height: "))]
-    desired_qtc = float(input("Enter the desired QTC (Total Q factor for sealed enclosure): "))
-
-    # Replace the previous enclosure calculation with the new enclosures library
-    enclosure_type = 'sealed'  # Adjust as needed based on your application
-    parameters_enclosure = [desired_qtc, vas, resonance_frequency]  # Adjust as needed based on your application
-
-    result_enclosure = enclosures(enclosure_type, parameters_enclosure)
-
-    # Display the results
-    print("\nEnclosure Results:")
-    for parameter, value in result_enclosure.items():
-        print(f"{parameter}: {value}")
-
-    # Display the results
-    print(f"\nRecommended Volume: {recommended_volume} cubic units")
-    print(f"Resonance Frequency: {resonance_frequency} Hz")
-    print(f"F3 (Cutoff Frequency): {f3} Hz")
-
-    # Generate panel dimensions based on the selected shape
-    if selected_shape in ['circle', 'rectangle']:
-        length = math.pow(recommended_volume, 1/3)
-        width = length
-        height = length
-    elif selected_shape == 'wedge':
-        # Adjust dimensions based on the specific shape requirements
-        length = math.pow(recommended_volume, 1/3)
-        width = length
-        height = length
-    elif selected_shape == 'wedge2':
-        # Adjust dimensions based on the specific shape requirements
-        length = math.pow(recommended_volume, 1/3)
-        width = length
-        height = length
-
-    print("\nGenerated Panel Dimensions:")
-    print(f"Length: {length} units")
-    print(f"Width: {width} units")
-    print(f"Height: {height} units")
 
 
 def main():
