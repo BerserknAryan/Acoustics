@@ -1,5 +1,7 @@
 # todo: add more enclosures and formulas got suggestions?
 import math
+from formulas import constants
+from acoustics.constants import c
 
 
 class Enclosures:
@@ -99,18 +101,19 @@ class Enclosures:
         return 0.50 * self.fs * (self.qts ** -1.5)
 
     @staticmethod
-    def calculate_dftqwt_resonant_frequency(speed_of_sound, effective_length):
-    # Formula to calculate the resonant frequency (Fb) for a dual folded tapered quarter-wave TL
-    return speed_of_sound / (4 * effective_length)
+    def calculate_dftqwt_resonant_frequency(c, effective_length):
+        # Formula to calculate the resonant frequency (Fb) for a dual folded tapered quarter-wave TL
+        return c / (4 * effective_length)
 
     @staticmethod
-    def calculate_dftqwt_quarter_wave_point_frequency(speed_of_sound, effective_length):
-    # Formula to calculate the quarter-wave point frequency (Fc) for a dual folded tapered quarter-wave TL
-    return speed_of_sound / (2 * effective_length)
+    def calculate_dftqwt_quarter_wave_point_frequency(c, effective_length):
+        # Formula to calculate the quarter-wave point frequency (Fc) for a dual folded tapered quarter-wave TL
+        return c / (2 * effective_length)
 
-    def calculate_dftqwt_minus3dB_frequency(speed_of_sound, effective_length, additional_length):
-    # Formula to calculate the -3 dB frequency (F3) for a dual folded tapered quarter-wave TL
-    return speed_of_sound / (4 * (effective_length + additional_length))
+    @staticmethod
+    def calculate_dftqwt_minus3dB_frequency(c, effective_length, additional_length):
+        # Formula to calculate the -3 dB frequency (F3) for a dual folded tapered quarter-wave TL
+        return c / (4 * (effective_length + additional_length))
 
     @staticmethod
     def f3_dual_folded_quarter_wave(f3_1, f3_2):
@@ -137,21 +140,21 @@ class Enclosures:
         return (frequency1 ** 2 + frequency2 ** 2) ** 0.5
 
     @staticmethod
-    def dual_folded_quarterwave_port_length(port_area, speed_of_sound):
+    def dual_folded_quarterwave_port_length(port_area, ):
         # Formula to calculate the effective length of the port for dual folded quarter-wave enclosure
-        return port_area / speed_of_sound
+        return port_area / c
 
     @staticmethod
-    def calculate_dfqwt_resonant_frequency(speed_of_sound, effective_length):
-    # Formula to calculate the resonant frequency (Fb) for a dual folded quarter-wave TL
-    return speed_of_sound / (4 * effective_length)
+    def calculate_dfqwt_resonant_frequency(c, effective_length):
+        # Formula to calculate the resonant frequency (Fb) for a dual folded quarter-wave TL
+        return c / (4 * effective_length)
 
     @staticmethod
-    def calculate_dfqwt_quarter_wave_point_frequency(speed_of_sound, effective_length):
-    # Formula to calculate the quarter-wave point frequency (Fc) for a dual folded quarter-wave TL
-    return speed_of_sound / (2 * effective_length)
+    def calculate_dfqwt_quarter_wave_point_frequency(c, effective_length):
+        # Formula to calculate the quarter-wave point frequency (Fc) for a dual folded quarter-wave TL
+        return c / (2 * effective_length)
 
     @staticmethod
-    def calculate_dfqwt_minus3dB_frequency(speed_of_sound, effective_length, additional_length):
-    # Formula to calculate the -3 dB frequency (F3) for a dual folded quarter-wave TL
-    return speed_of_sound / (4 * (effective_length + additional_length))
+    def calculate_dfqwt_minus3dB_frequency(c, effective_length, additional_length):
+        # Formula to calculate the -3 dB frequency (F3) for a dual folded quarter-wave TL
+        return c / (4 * (effective_length + additional_length))

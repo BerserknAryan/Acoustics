@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from scipy.special import erfc
 
 class Boundary:
-    # Define the <link>Boundary</link> class with methods for handling boundary conditions
+    # Define the Boundary class with methods for handling boundary conditions
     def __init__(self, boundary_type):
         self.boundary_type = boundary_type
 
