@@ -1,0 +1,35 @@
+horn usage
+# Example usage
+throat_area = 10  # Sample values, you can replace them with actual values
+mouth_area = 50
+length = 2
+
+con_rate_of_flare = horns.calculate_con_rate_of_flare(throat_area, mouth_area, length)
+exp_rate_of_flare_constant = horns.calculate_exp_rate_of_flare_constant(con_rate_of_flare, throat_area, length)
+
+# Create an instance of the <link>Sealed</link> class
+sealed_enclosure = <link>Sealed</link>()
+
+# Calculate the volume of a sealed enclosure
+volume_sealed = sealed_enclosure.calculate_sealed_volume()
+print(volume_sealed)  # Output: Volume of sealed enclosure calculated
+
+# Calculate the volume of a compound sealed enclosure
+volume_compound = sealed_enclosure.calculate_compound_volume()
+print(volume_compound)  # Output: Volume of compound sealed enclosure calculated
+
+# Calculate the volume of a back-to-back sealed enclosure
+volume_backtoback = sealed_enclosure.calculate_backtoback_volume()
+print(volume_backtoback)  # Output: Volume of back-to-back sealed enclosure calculated
+
+# Calculate the volume of a planar sealed enclosure
+volume_planar = sealed_enclosure.calculate_planar_volume()
+print(volume_planar)  # Output: Volume of planar sealed enclosure calculated
+
+# Calculate the volume of a push/pull sealed enclosure
+volume_pushpull = sealed_enclosure.calculate_pushpull_volume()
+print(volume_pushpull)  # Output: Volume of push/pull sealed enclosure calculated
+
+# Calculate the volume of a push/push sealed enclosure
+volume_pushpush = sealed_enclosure.calculate_pushpush_volume()
+print(volume_pushpush)  # Output: Volume of push/push sealed enclosure calculated

@@ -1,0 +1,32 @@
+isobaric usage
+# Usage examples
+# Calculate enclosure volume for vented isobaric conditions
+vas = 0.5  # Example value for Vas
+qts = 0.4  # Example value for Qts
+enclosure_volume = ISOBARIC.isobaric(vas, qts)
+print("Enclosure Volume:", enclosure_volume)
+
+# Calculate tuning frequency for vented enclosure in isobaric conditions
+tuning_frequency = ISOBARIC.VentedIsobaric.calculate_tuning_frequency(vas, qts, enclosure_volume)
+print("Tuning Frequency:", tuning_frequency)
+
+# Calculate cut-off frequency for vented enclosure in isobaric conditions
+fs = 1000  # Example value for fs
+cut_off_frequency = ISOBARIC.VentedIsobaric.calculate_cut_off_frequency(fs, qts)
+print("Cut-off Frequency:", cut_off_frequency)
+
+# Calculate optimal port area for vented enclosure in isobaric conditions
+port_area = ISOBARIC.VentedIsobaric.calculate_port_area(tuning_frequency, enclosure_volume)
+print("Optimal Port Area:", port_area)
+
+# Calculate required port length for vented enclosure in isobaric conditions
+port_length = ISOBARIC.VentedIsobaric.calculate_port_length(port_area, tuning_frequency)
+print("Required Port Length:", port_length)
+
+# Estimate air speed within the port for vented enclosure in isobaric conditions
+air_speed = ISOBARIC.VentedIsobaric.calculate_air_speed(port_area, tuning_frequency, enclosure_volume)
+print("Air Speed within the Port:", air_speed)
+
+# Determine the overall efficiency of vented enclosure in isobaric conditions
+efficiency = ISOBARIC.VentedIsobaric.calculate_efficiency(enclosure_volume, tuning_frequency, qts, fs)
+print("Overall Efficiency:", efficiency)
