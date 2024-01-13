@@ -1,0 +1,26 @@
+how to add atmospheric conditions to your enclosure calculations
+
+atmosphere = Atmosphere(temperature=your_temperature, pressure=your_pressure, relative_humidity=your_relative_humidity)
+
+
+
+
+sound_speed = atmosphere.soundspeed
+saturation_pressure = atmosphere.saturation_pressure
+molar_concentration = atmosphere.molar_concentration_water_vapour
+
+
+
+
+
+# Instantiate Atmosphere class with specific atmospheric conditions
+atmosphere = Atmosphere(temperature=293.15, pressure=101.325, relative_humidity=0.5)
+
+# Obtain sound speed and other relevant properties
+sound_speed = atmosphere.soundspeed
+saturation_pressure = atmosphere.saturation_pressure
+molar_concentration = atmosphere.molar_concentration_water_vapour
+
+# Use these properties in your subwoofer enclosure calculations
+# ... Your subwoofer enclosure code ...
+
