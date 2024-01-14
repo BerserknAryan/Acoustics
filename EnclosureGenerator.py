@@ -110,18 +110,3 @@ class EnclosurePanelGenerator:
         panel1['face'][face1] = panel2['face'][face2]
         panel2['face'][face2] = panel1['face'][face1]
 
-# Example usage:
-enclosure_generator = EnclosurePanelGenerator(length=10, width=8, height=6)
-enclosure_generator.generate_panels()
-
-# Create a baffle board with speaker cutout
-baffle_board = enclosure_generator.create_baffle_board(speaker_cutout_dimensions=[(2, 3, 4, 5)])
-
-# Create an internal board with a label at a specific position
-internal_board = enclosure_generator.create_internal_board(label="Internal Board 1", position=(2, 2, 2))
-
-# Connect two panels
-enclosure_generator.connect_panels(panel1_label='Front', panel2_label='Baffle', face1=0, face2=3, edge1=1, edge2=2)
-
-# Plot the enclosure with the baffle board and internal board
-enclosure_generator.plot_enclosure()
