@@ -4,9 +4,13 @@ from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 
 class EnclosurePanelGenerator:
     def __init__(self, length, width, height):
-        self.length = length
-        self.width = width
-        self.height = height
+        self.length1 = length1
+        self.length2 = length2
+        self.width1 = width1
+        self.width2 = width2
+        self.heigh1 = height1
+        self.height2 = height2
+        self.
         self.panels = []
 
     def generate_panels(self):
