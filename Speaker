@@ -1,0 +1,408 @@
+class SpeakerType:
+    @staticmethod
+    def speaker_type():
+        pass
+
+    class Subwoofer:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            self.
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.pe
+    	
+    class Woofer:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.pe
+
+        class Mid_Bass:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.pe
+    
+        class Mid_Range:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.pe
+
+    class Full_Range:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.pe
+                
+    class Component:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.pe         
+
+    class Tweeter:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.pe
+
+v    class Compressor:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.pe  
+
+    class 2Way:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.pe
+  
+    class 3way:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.pe
+
+    class 4way:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.pe                
+ 
+    class Bass_Guitar:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.pe 
+
+    class guitar:
+        def __Init__(self):
+            self.ts_parameters = self.get.ts_parameters()
+        
+        
+        def get_ts_parameters(self):
+            print("Enter Thiele-Small values:")
+            self.fs = float(input("1. Resonant Frequency (fs) in Hz: "))
+            self.qes = float(input("2. Electrical Q (Qes): "))
+            self.qms = float(input("3. Mechanical Q (Qms): "))
+            self.qts = float(input("4. Totaal Mechanical Q (Qts): "))
+            self.vas = float(input("5. Equivalent Volume (Vas) in cubic feet: "))
+            self.spl = float(input("6. Sensitivity (SPL) in dB: "))
+            self.sd = float(input("7. Effective Piston Area (Sd) in square inches: "))
+            self.bl = float(input("8. Force Factor (BL): "))
+            self.re = float(input("9. DC Resistance (Re) in ohms: "))
+            self.xmax = float(input("10. Maximum Linear Excursion (Xmax) in inches: "))
+            self.pe = float(input("11. Power Handling (Pe) in watts: "))
+            
+            return {
+                'Resonant Frequency (fs)': self.fs,
+                'Electrical Q (Qes)': self.qes,
+                'Mechanical Q (Qms)': self.qms,
+                'Equivalent Volume (Vas)': self.vas,
+                'Sensitivity (SPL)': self.spl,
+                'Effective Piston Area (Sd)': self.sd,
+                'Force Factor (BL': self.bl,
+                'DC Resistance (Re': self.re,
+                'Max Linear Excursion (Xmax': self.xmax,
+                'Power Handling (Pe)': self.peclass SpeakerDimensions:

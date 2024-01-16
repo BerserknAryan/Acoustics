@@ -1,0 +1,145 @@
+class SpeakerDimensions:
+    @staticmethod
+    def speaker_dimensions():
+        class SubwooferDimensions:
+            print("Enter the dimensions of subwoofer")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))
+
+        class WooferDimensions:
+            print("Enter the dimensions of woofer:")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))
+
+		class MidBassDimensions:
+            print("Enter the dimensions of woofer:")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))
+			
+		class MidRangeDimensions:
+            print("Enter the dimensions of woofer:")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))
+			
+		class FullRangeDimensions:
+            print("Enter the dimensions of woofer:")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))
+		
+		class ComponentDimensions:
+            print("Enter the dimensions of woofer:")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))
+			
+		class TweeterDimensions:
+            print("Enter the dimensions of woofer:")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))
+
+		class CompressorDimensions:
+            print("Enter the dimensions of woofer:")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))
+
+		class 2wayDimensions:
+            print("Enter the dimensions of woofer:")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))
+			
+		class 3wayDimensions:
+            print("Enter the dimensions of woofer:")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))
+
+		class 3wayDimensions:
+            print("Enter the dimensions of woofer:")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))
+			
+		class BassGuitarDimensions:
+            print("Enter the dimensions of woofer:")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))
+
+		class GuitarDimensions:
+            print("Enter the dimensions of woofer:")
+            cone_diameter = float(input("Cone Diameter: "))
+            outer_diameter = float(input("Outer Diameter: "))
+            mounting_depth = float(input("Mounting Depth: "))
+            magnet_diameter = float(input("Magnet Diameter: "))
+            weight = float(input("Weight: "))
+            frequency_range = input("Frequency Response Range: ")
+            voice_coil_diameter = float(input("Voice Coil Diameter: "))
+            basket_diameter = float(input("Basket Diameter: "))	
