@@ -5,6 +5,34 @@
 import math
 
 
+horn_library = {}
+
+
+def calculate_horn_parameters(horn_type, parameter):
+    key = f"{horn_type}_{parameter}"
+    return horn_library.fetch(key, "Invalid horn type or parameter")
+# Add formulas for optimal throat area, optimal mouth area, and
+# optimal length for conical, exponential, hyperbolic, parabolic horns
+horn_library['conical_throat_area'] = "(2 * math.pi * r_t * l_t) / (math.sqrt(1 + (r_t / l_t) ** 2))"
+horn_library['conical_mouth_area'] = "throat_area_conical * (math.exp((flare_rate * l) / r_t) - 1)"
+horn_library['conical_optimal_length'] = "(1 / flare_rate) * math.log(Am / At)"
+horn_library['exponential_throat_area'] = "Am / (1 + (2 / (math.exp((2 * l_t) / (r_t * flare_rate))) - 1))"
+horn_library['exponential_mouth_area'] = "Am * (math.exp((flare_rate * l) / r_t) - 1)"
+horn_library['exponential_optimal_length'] = "(1 / flare_rate) * math.log(Am / At)"
+horn_library[
+    'hyperbolic_throat_area'] = "(math.pi * r_t ** 2) / (1 + (2 / (math.exp((2 * l_t) / (r_t * flare_rate))) - 1))"
+horn_library['hyperbolic_mouth_area'] = "Am * (math.exp((flare_rate * l) / r_t) - 1)"
+horn_library['hyperbolic_optimal_length'] = "(1 / flare_rate) * math.log(Am / At)"
+horn_library['parabolic_throat_area'] = "(4 * Am) / (math.pi * r_t)"
+horn_library['parabolic_mouth_area'] = "Am * (math.exp((flare_rate * l) / r_t) - 1)"
+horn_library['parabolic_optimal_length'] = "(1 / flare_rate) * math.log(Am / At)"
+horn_library[
+    'rate_of_flare'] = "2 * (math.atan(flare_rate * l_t / (2 * r_t)) - math.atan(flare_rate * 0 / (2 * r_t))) / l_t"
+horn_library[
+    'rate_of_flare_constant'] = ("2 * math.atan(flare_rate_constant * l_t / (2 * r_t)) - 2 * math.atan"
+                                 "(flare_rate_constant * 0 / (2 * r_t))")
+                                 
+                                 
 class Horns:
     def __init__(self):
         self.con = {'rate_of_flare': "", 'rat_of_flare_constant': ""}
