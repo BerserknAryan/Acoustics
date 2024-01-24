@@ -3,7 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.special import erfc
 
+
 class Boundary:
+
     # Define the Boundary class with methods for handling boundary conditions
     def __init__(self, boundary_type):
         self.boundary_type = boundary_type
@@ -13,7 +15,16 @@ class Boundary:
         # Implement the plotting logic based on the specific boundary conditions
         pass
 
+
 class FreeAir:
+    def __init__(self, total_cms, effective_piston_area, cone_area, fs):
+        # Initialize the <link>FreeAir</link> class with relevant parameters
+        super().__init__(boundary_type="free air")
+        self.total_cms = total_cms
+        self.effective_piston_area = effective_piston_area
+        self.cone_area = cone_area
+        self.fs = fs
+
     @staticmethod
     def trunk_resonant_frequency(total_cms, effective_piston_area, trunk_volume, fs):
         # Formula to calculate the resonant frequency for a speaker in the trunk
@@ -24,12 +35,6 @@ class FreeAir:
     @staticmethod
     def rear_deck_resonant_frequency(total_cms, effective_piston_area, fs):
         # Formula to calculate the resonant frequency for a speaker in the rear deck
-        return (1 / (2 * 3.141592) * math.sqrt
-                ((total_cms / effective_piston_area) + fs ** 2))
-
-    @staticmethod
-    def rear_seat_resonant_frequency(total_cms, effective_piston_area, fs):
-        # Formula to calculate the resonant frequency for a speaker in the rear seat
         return (1 / (2 * 3.141592) * math.sqrt
                 ((total_cms / effective_piston_area) + fs ** 2))
 
@@ -94,6 +99,28 @@ class InfiniteBaffleSpeaker:
         self.plot_impedance()
         self.plot_reflection_factor()
         plt.show()
+
+    def plot_reflection_factor(self):
+        # Method to plot the reflection factor based on the boundary type
+        frequency_range = np.linspace(10, 20000, 500)  # Adjust the frequency range as needed
+        reflection_factor = self.calculate_reflection_factor(frequency_range)
+
+        plt.plot(frequency_range, reflection_factor)
+        plt.title('Reflection Factor for Infinite Baffle Speaker')
+        plt.xlabel('Frequency (Hz)')
+        plt.ylabel('Reflection Factor')
+        plt.grid(True)
+
+    def calculate_reflection_factor(self, frequencies):
+        # Function to calculate the reflection factor for each frequency
+        reflection_factor = []
+        for freq in frequencies:
+            # Use the reflection factor formula for infinite baffle speakers
+            # You may need to adjust this formula based on your specific requirements
+            # For example, you can use the erfc function from scipy for more accurate calculations
+            reflection_factor.append(0.5 * math.sin(math.radians(180 * (freq / self.fs))))
+
+        return reflection_factor
 
 # Example usage 1:
 total_cms = 0.02

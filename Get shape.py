@@ -1,5 +1,6 @@
 import math
-from formulas import area_formulas, enclosures, conversion
+from formulas import conversion
+from Area import area_formulas
 
 
 def define_shape(shape, dimensions):
@@ -38,11 +39,13 @@ def get_system():
 
     # get enclosure shape
     print("List of shapes:")
-    print("1. Circle")
-    print("2. Rectangle")
+    print("1. Tubular")
+    print("2. Cuboid")
     print("3. Wedge")
     print("4. Wedge2")
-    print("5. polygon")
+    print("5. "Polygon")
+    print("6. Elliptical")
+    print("7. Conical")
 
     # Get user input for shape selection
     selected_shape_num = int(input("Enter the number of the shape: "))
@@ -54,6 +57,8 @@ def get_system():
         3: 'wedge',
         4: 'wedge2',
         5: 'polygon'
+        6: 'elliptical',
+        7: 'conical'
     }
 
     selected_shape = shape_mapping.get(selected_shape_num)
