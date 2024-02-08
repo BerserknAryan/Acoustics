@@ -67,24 +67,3 @@ common_conversion = {
     'day': 86400,
     'week': 604800,
 }
-
-
-def conversion(value, unit):
-    """
-    Convert a value from one unit to another using the metric_conversion and imperial_conversion dictionaries.
-
-    Parameters:
-    - value: The numerical value to be converted.
-    - unit: The unit of the input value.
-
-    Returns:
-    - The converted value in the specified unit.
-    """
-    if unit in metric_conversion:
-        return value * metric_conversion[unit]
-    elif unit in imperial_conversion:
-        return value * imperial_conversion[unit]
-    elif unit in common_conversion:
-        return value * common_conversion[unit]
-    else:
-        raise ValueError("Invalid unit")

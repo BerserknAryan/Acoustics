@@ -9,11 +9,9 @@ class Boundary:
     # Define the Boundary class with methods for handling boundary conditions
     def __init__(self, boundary_type):
         self.boundary_type = boundary_type
-
-    def plot_reflection_factor(self):
-        # Method to plot the reflection factor based on the boundary type
-        # Implement the plotting logic based on the specific boundary conditions
-        pass
+        boundary_types = ["free air", "infinite baffle", "trunk", "rear deck", "small deck", "floorboard"]
+        if boundary_type not in boundary_types:
+            raise ValueError("Boundary type not supported")
 
 
 class FreeAir:
@@ -121,6 +119,7 @@ class InfiniteBaffleSpeaker:
             reflection_factor.append(0.5 * math.sin(math.radians(180 * (freq / self.fs))))
 
         return reflection_factor
+
 
 # Example usage 1:
 total_cms = 0.02
