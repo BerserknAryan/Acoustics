@@ -40,3 +40,6 @@ Conical.py,f\6\f600aeab7ee999527199590c2bd6559600afeaa3
 Exponential.py,c\b\cbe2fdb18de5b3391038947f1be5d4403d34ac4a
 =
 Hyperbolic.py,5\3\53d93fe96918038d1c790e352e8116d7c4aedeea
+:
+
+Ellipse.py,3\1\31f389dc235f1c604176172f078d966c56e5cc7a

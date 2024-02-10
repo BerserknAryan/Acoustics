@@ -5,24 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44c0a653-ee88-45e1-a942-91cb00ca106e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Conical.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exponential.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hyperbolic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optimize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2f2945fca10ba79b10ffdb6c75d1b6fa00ef1a2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2f2945fca10ba79b10ffdb6c75d1b6fa00ef1a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ellipse.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/Constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Driver GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/Driver GUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Formulas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Formulas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Horns.py" beforeDir="false" afterPath="$PROJECT_DIR$/Horns.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basshorn.py" beforeDir="false" afterPath="$PROJECT_DIR$/basshorn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputbass.py" beforeDir="false" afterPath="$PROJECT_DIR$/outputbass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sealed.py" beforeDir="false" afterPath="$PROJECT_DIR$/sealed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperbolic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hyperbolic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,16 +59,48 @@
     "RunOnceActivity.CodyProjectSettingsMigration": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "E:/GitHub/Acoustics_Package",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Python.outputbass">
+  <component name="RunManager" selected="Python.=--+ VZ MNZ/+&gt;BZ;/LKGHZ?&quot;:&gt;G">
+    <configuration name="=--+ VZ MNZ/+&gt;BZ;/LKGHZ?&quot;:&gt;G" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Acoustics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="software.aws.toolkits.jetbrains.core.execution.PythonAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/outputbass.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="fibonacci2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Acoustics" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,30 +128,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="outputbass" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Acoustics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/outputbass.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Python.fibonacci2" />
+      <item itemvalue="Python.=--+ VZ MNZ/+&gt;BZ;/LKGHZ?&quot;:&gt;G" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.outputbass" />
+        <item itemvalue="Python.=--+ VZ MNZ/+&gt;BZ;/LKGHZ?&quot;:&gt;G" />
       </list>
     </recent_temporary>
   </component>

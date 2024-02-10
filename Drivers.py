@@ -2,6 +2,7 @@ import os
 import json
 import psutil
 
+
 def list_available_drives():
     drives = [drive.device for drive in psutil.disk_partitions()]
     print("Available Drives:")
@@ -11,11 +12,13 @@ def list_available_drives():
     selected_drive = drives[selected_drive_index]
     return selected_drive
 
+
 def create_drivers_folder(selected_drive):
     drivers_folder_path = os.path.join(selected_drive, 'Drivers')
     os.makedirs(drivers_folder_path, exist_ok=True)
     print(f"Drivers folder created at: {drivers_folder_path}")
     return drivers_folder_path
+
 
 def create_json_file(filename):
     data = {
@@ -50,6 +53,7 @@ def create_json_file(filename):
         json.dump(data, json_file, indent=2)
 
     print(f"JSON file '{filename}' created successfully.")
+
 
 if __name__ == "__main__":
     selected_drive = list_available_drives()
