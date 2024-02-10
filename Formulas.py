@@ -1,24 +1,7 @@
 # formulas.py
 import math
 import numpy as np
-
-
-constants = {'Pi': math.pi,
-             'c': 343,  # Speed of sound in meters per second
-             'epsilon_0': 8.854e-12,  # Vacuum permittivity in farads per meter
-             'mu_0': 4e-7 * math.pi,  # Vacuum permeability in henry per meter
-             'sigma': 5.67e-8,  # Stefan-Boltzmann constant in watts per square meter per kelvin^4
-             'R': 8.314,  # Universal gas constant in joules per mole-kelvin
-             'G': 6.67430e-11,  # Gravitational constant in m^3 kg^-1 s^-2
-             'h': 6.626e-34,  # Planck constant in joule-seconds
-             'k': 1.38e-23,  # Boltzmann constant in joules per kelvin
-             'e': 1.602e-19,  # Elementary charge in coulombs
-             'N_A': 6.022e23,  # Avogadro's number in mol^-1
-             'k_e': 8.988e9,  # Coulomb's constant in newton-square meters per square coulomb^2
-             'h_bar': 1.054e-34,  # Reduced Planck constant in joule-seconds
-             'R_inf': 1.097e7,  # Rydberg constant in per meter
-             'c_0': 299792458,  # Speed of light in vacuum in meters per second
-             }
+from Drivers import driver
 
 
 class Vented:
@@ -51,7 +34,8 @@ class Vented:
     @staticmethod
     def port_diameter_for_driver(self):
         # Determine port diameter for drivers in vented and bandpass boxes
-        if 6 <= self.driver_diameter <= 8:
+        if driver == 1:
+            6 <= self.driver_diameter <= 8
             return 3
         elif 8 < self.driver_diameter <= 10:
             return 4
@@ -67,6 +51,8 @@ class Vented:
             return 16
         elif 26 < self.driver_diameter <= 32:
             return 22
+    else:
+        return drivers * vented.port_diameter_for_driver(driver_diameter, 1)
 
     @staticmethod
     def port_length(vb, fb, port_diameter):

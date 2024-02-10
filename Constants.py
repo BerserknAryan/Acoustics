@@ -1,9 +1,9 @@
 constants = {
-    'pi': math.pi,
-    'e': math.e,
-	'c': 343,  # Speed of sound in meters per second
+    'pi' : 3.14159265358979323846,
+    'e' : 2.718281828459045,
+	'c' : 343,  # Speed of sound in meters per second
 	'epsilon_0': 8.854e-12,  # Vacuum permittivity in farads per meter
-    'mu_0': 4e-7 * math.pi,  # Vacuum permeability in henry per meter
+    'mu_0': 4e-7 * 3.14159265358979323846,  # Vacuum permeability in henry per meter
     'speed_of_light': 299792458,  # Speed of light in meters per second
     'gravitational_constant': 6.67430e-11,
     'Planck_constant': 6.62607015e-34,
@@ -19,7 +19,7 @@ constants = {
 	'e': 1.602e-19,  # Elementary charge in coulombs
     'speed_of_sound': 343,  # Speed of sound in meters per second at 20 degrees Celsius
     'vacuum_permittivity': 8.854187817e-12,  # Permittivity of free space in farads per meter
-    'vacuum_permeability': 4 * math.pi * 1e-7,  # Permeability of free space in henrys per meter
+    'vacuum_permeability': 4 * 3.14159265358979323846 * 1e-7,  # Permeability of free space in henrys per meter
     'electron_mass': 9.10938356e-31,  # Mass of an electron in kilograms
     'N_A': 6.022e23,  # Avogadro's number in mol^-1
     'k_e': 8.988e9,  # Coulomb's constant in newton-square meters per square coulomb^2

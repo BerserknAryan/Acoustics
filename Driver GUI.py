@@ -34,8 +34,7 @@ class DriverConfiguratorApp:
         tab_parent.pack(expand=1, fill='both')
 
     def create_input_boxes(self, tab, category):
-        # Create and pack input boxes for each parameter
-        # ...
+        label_TS
 
     def create_save_tab(self, tab):
         # Create input boxes for brand and model
@@ -55,9 +54,8 @@ class DriverConfiguratorApp:
         save_button = ttk.Button(tab, text="Save", command=lambda: self.save_configuration(entry_brand.get(), entry_model.get()))
         save_button.grid(row=2, column=0, columnspan=2, pady=20)
 
-    def save_configuration(self, brand, model):
-        # Save configuration to JSON file
-        # ...
+    def save_file(self):
+
 
 def main():
     root = tk.Tk()
