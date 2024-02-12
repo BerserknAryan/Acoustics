@@ -44,7 +44,7 @@ try:
         save_driver_config(driver_name, driver_config)
 
         # Additional inputs for the horn design
-        desired_T = float(input("Enter desired T (0.1-10): "))
+        t = float(input("Enter desired T (0.1-10): "))
         desired_fg = float(input("Enter desired frequency at -3dB start (Hz): "))
         drivers = int(input("Enter number of drivers: "))
 
@@ -134,7 +134,7 @@ try:
          height_amt, Fl, Fh) = optimize_dimensions(fs, qts, vas_dm3, optimal_t, driver_)
 
         # Calculate horn dimensions
-        at_in_sq, amt_in_sq, L_in, taper_rate = optimize_dimensions(fs, qts, vas_dm3, desired_T)
+        at_in_sq, amt_in_sq, L_in, taper_rate = optimize_dimensions(fs, qts, vas_dm3, t)
 
         # Print horn dimensions in imperial units with labels
         print("Throat Area (at) in square inches: ", at_in_sq)

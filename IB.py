@@ -2,22 +2,12 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.special import erfc
+from IB import boundary_type
 
-
-class Boundary:
-
-    # Define the Boundary class with methods for handling boundary conditions
-    def __init__(self, boundary_type):
-        self.boundary_type = boundary_type
-        boundary_types = ["free air", "infinite baffle", "trunk", "rear deck", "small deck", "floorboard"]
-        if boundary_type not in boundary_types:
-            raise ValueError("Boundary type not supported")
-
-
-class FreeAir:
+class Speaker_Location:
     def __init__(self, total_cms, effective_piston_area, cone_area, fs):
         # Initialize the <link>FreeAir</link> class with relevant parameters
-        super().__init__(boundary_type="free air")
+        super().__init__(Speaker_Location="boundary_type")
         self.total_cms = total_cms
         self.effective_piston_area = effective_piston_area
         self.cone_area = cone_area
@@ -71,7 +61,13 @@ class FreeAir:
                 (((total_cms + (ceiling_area * 1000)) /
                   effective_piston_area) + fs ** 2))
 
-
+    def floorboard_resonant_frequency(self):
+        # Formula to calculate the resonant frequency for a speaker installed in the floorboard
+        return (1 / (2 * 3.141592) * np.sqrt
+                (((self.total_cms + (self.cone_area * 1000)) /
+                  self.effective_piston_area) + self.fs ** 2))
+                  
+                  
 class InfiniteBaffleSpeaker:
     def __init__(self, total_cms, effective_piston_area, cone_area, fs, floorboard_volume):
         # Initialize the <link>InfiniteBaffleSpeaker</link> class with relevant parameters
@@ -81,12 +77,6 @@ class InfiniteBaffleSpeaker:
         self.cone_area = cone_area
         self.fs = fs
         self.floorboard_volume = floorboard_volume
-
-    def floorboard_resonant_frequency(self):
-        # Formula to calculate the resonant frequency for a speaker installed in the floorboard
-        return (1 / (2 * 3.141592) * np.sqrt
-                (((self.total_cms + (self.cone_area * 1000)) /
-                  self.effective_piston_area) + self.fs ** 2))
 
     def plot_impedance(self):
         # Method to plot the impedance of the speaker based on its parameters
